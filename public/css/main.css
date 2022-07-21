@@ -1,0 +1,16 @@
+body {
+    background-image: url("/images/background.svg");
+    background-repeat:repeat-y;
+    background-position: bottom left;
+    width:auto; 
+    animation: shine 22s linear infinite;
+}
+
+@keyframes shine {
+    from {
+      background-position: center 0;
+    }
+    to {
+      background-position: center 100%;
+    }
+  }
