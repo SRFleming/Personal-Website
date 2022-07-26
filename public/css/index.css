@@ -5,21 +5,86 @@ body {
     padding: 0;
     max-width: 100%;
     overflow-x: hidden;
+    height: 100vh;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    font-family: 'Trebuchet MS';
+    box-sizing: border-box;
 }
 
-.AboutMe {
-    position: absolute;
-    background-color: white;
-    padding: 10px;  
-    margin-top: 60vh;
-    padding-bottom: 1000px;
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    height: 100vh;
+}
+
+section#About {
+    background-color: #1B1464;
+}
+
+section#Projects {
+    background-color: #9E005D;
+}
+
+section#Videos {
+    background-color: #FBB03B;
+}
+
+section#Photos {
+    background-color: #00750E;
 }
 
 p {
-    font-family: 'Roboto Slab';
+    color: white;
     font-size: 20px;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 10vh;
+}
+
+.linklist {
+    display: flex;
+    list-style: none;
+    justify-content:space-between;
+    width: 60%;
+    padding: 0;
+    border: 2px solid black;
+    height: 60px;
+}
+
+button {
+    position: absolute;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: white;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    cursor: default;
+    border: none;
+    background: none;
+    cursor: pointer;
+    -webkit-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    color: red;
+    transform:scale(1.1,1.1);
 }
 
 ::-webkit-scrollbar {
@@ -29,10 +94,9 @@ p {
 .logobox {
     display: flex;
     justify-content:center;
-    padding-top: 40vh;
+    align-items: center;
 }
 
 .logo {
-    position: fixed;
     width: 400px;
 }
