@@ -54,26 +54,14 @@ p {
 .linklist {
     display: flex;
     list-style: none;
-    justify-content:space-between;
-    width: 60%;
+    justify-content: space-between;
+    width: 60vw;
     padding: 0;
-    border: 2px solid black;
-    height: 60px;
+    height: 100px;
 }
 
 button {
-    position: absolute;
-    writing-mode: horizontal-tb !important;
-    text-rendering: auto;
     color: white;
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    text-align: center;
-    cursor: default;
     border: none;
     background: none;
     cursor: pointer;
@@ -82,8 +70,27 @@ button {
     transition: transform 0.2s;
 }
 
-button:hover {
+.instagram:hover {
+    background: -webkit-linear-gradient(#C13584, #F56040);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    transform:scale(1.1,1.1);
+}
+
+.youtube:hover {
     color: red;
+    transform:scale(1.1,1.1);
+}
+
+.github:hover {
+    color: grey;
+    transform:scale(1.1,1.1);
+}
+
+.linkedin:hover {
+    color: #0077B5;
     transform:scale(1.1,1.1);
 }
 
